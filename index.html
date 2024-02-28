@@ -1,21 +1,29 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Une petite page HTML</title>
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <h1>Un titre de niveau 1</h1>
-        
-        <p>
-            Un premier petit paragraphe.
-        </p>
-        
-        <h2>Un titre de niveau 2</h2>
-        
-        <p>
-            Un autre paragraphe contenant un lien pour aller
-            sur le site <a href="http://koor.fr">KooR.fr</a>.
-        </p>
-    </body>
+<head>
+    <title>Visualisation Project</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h2>Liste des Installations Sportives</h2>
+    <table id="installations-table">
+        <thead>
+            <tr>
+                <th>Numéro</th>
+                <th>Nom</th>
+                <th>Adresse</th>
+                <th>Code Postal</th>
+                <th>Commune</th>
+                <th>Date de création</th>
+                <th>Date de validation</th>
+            </tr>
+        </thead>
+        <tbody id="table-content"></tbody>
+    </table>
+    <div id="map"></div>
+    <script src="app.js"></script>
+</body>
 </html>
